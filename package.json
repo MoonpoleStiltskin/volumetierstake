@@ -12,8 +12,8 @@
     "postinstall": "export THIRDWEB_CLI_SKIP_INTRO=true && npx --yes thirdweb@latest generate && export THIRDWEB_CLI_SKIP_INTRO=true && npx --yes thirdweb@latest generate"
   },
   "dependencies": {
-    "@thirdweb-dev/react": "^3.14.17",
-    "@thirdweb-dev/sdk": "^3.10.29",
+    "@thirdweb-dev/react": "^3.14.18",
+    "@thirdweb-dev/sdk": "^3.10.38",
     "ethers": "^5.7.2",
     "lodash": "^4.17.21",
     "next": "^13",
