@@ -1,0 +1,385 @@
+.container {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  padding: 0 0px;
+  height: 80vh;
+  gap: 40px;
+  /* adjust this to add more or less space between the parts */
+}
+
+.container1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  padding: 0 37px;
+  padding-bottom: 50px;
+}
+
+@font-face {
+  font-family: 'power_groteskregular';
+  src: url('../public/fonts/powergrotesk-regular.woff2') format('woff2'),
+    url('../public/fonts/powergrotesk-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'power_groteskultrabold';
+  src: url('../public/fonts/PowerGrotesk-UltraBold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+.h1 {
+  margin-bottom: 0px;
+  color: #2600fc;
+  font-family: power_groteskultrabold;
+  font-size: 4rem;
+}
+
+.h4 {
+  line-height: 1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #7a7a7a;
+  font-family: power_groteskregular;
+  font-size: 1rem;
+}
+
+.section {
+  margin: 200px 200px;
+  margin-bottom: 200px;
+  /* adjust the values as needed */
+}
+
+.explain {
+  font-size: 1.125rem;
+  max-width: 1200px;
+}
+
+.divider {
+  width: 50%;
+  border-color: #ffffff;
+  opacity: 0.25;
+}
+
+.smallDivider {
+  width: 25%;
+  border-color: #ffffff;
+  margin-top: 50px;
+  opacity: 0.25;
+}
+
+.openseaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  min-height: 43px;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+  line-height: 1;
+  flex-shrink: 0;
+  box-shadow: none;
+  background: hsl(256, 6.0%, 93.2%);
+  color: hsl(246, 6.0%, 9.0%);
+  cursor: pointer;
+  text-decoration: none;
+  /* add this if you want to remove the underline from the link */
+}
+
+/* if you want to style the link when it's visited, you can use a class name like this */
+/* .openseaButton:visited {
+  /* add your styles for visited links here */
+/*}
+*/
+
+.nftBoxGrid {
+  width: 1200px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.nftBox {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 19%;
+  min-width: 360px;
+  min-height: 200px;
+  padding: 16px;
+}
+
+.nftBox:hover {
+  cursor: pointer;
+}
+
+.nftBoxSelected {
+  background-color: #aeaeae70;
+  border-radius: 16px;
+}
+
+.disabledButton {
+  color: black;
+}
+
+.optionSelectBox {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 48%;
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.selectBoxTitle {
+  font-size: 1.75rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.selectBoxDescription {
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0px;
+}
+
+/* Between 1200 and 800 */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .nftBox {
+    width: 49%;
+    margin-top: 16px;
+  }
+
+  .nftBoxSelected {
+    width: 90%;
+    margin-top: 16px;
+  }
+}
+
+/* beneath 800
+*/
+@media only screen and (max-width: 800px) {
+  .nftBoxGrid {
+    justify-content: center;
+  }
+
+  .nftBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .nftBoxSelected {
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .optionSelectBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+}
+
+.tokenGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  width: 1600px;
+  max-width: 95vw;
+  flex-wrap: wrap;
+  ;
+
+}
+
+.tokenItem {
+  width: 15%;
+  height: 35%;
+  min-height: 50px;
+  min-width: 300px;
+  border-radius: 16px;
+  background-color: #ffffff7c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid #2600fc;
+  gap: 40px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+  grid-row: auto;
+}
+
+.tokenLabel {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Second tokenLabel item */
+
+.tokenValue {
+  font-size: 1.3rem;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.tokenValueAlt {
+  font-size: 1.3rem;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: rgb(255, 255, 255)
+}
+
+/* On Mobile, make tokenGrid 100% width */
+@media only screen and (max-width: 850px) {
+  .tokenItem {
+    width: 90%;
+    margin-top: 12px;
+  }
+}
+
+/* Screen less than 630, then hide .center */
+@media only screen and (max-width: 630px) {
+  .center {
+    display: none;
+  }
+
+  .h1 {
+    font-size: 2rem;
+  }
+}
+
+.spacerTop {
+  margin-top: 16px;
+
+}
+
+.bigSpacerTop {
+  margin-top: 32px;
+}
+
+.smallSpacerTop {
+  margin-top: -16px;
+}
+
+.spacerBottom {
+  margin-bottom: 16px;
+
+}
+
+.detailPageHr {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.nftMedia {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 15px;
+}
+
+.errorMessage {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fc0000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  padding: 16px;
+  margin: 4px 2px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: -60px;
+  /* Initially hidden */
+  width: 100%;
+  background-color: #aeaeae70;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  transition: bottom 0.5s ease-in-out;
+  /* Add animation transition */
+}
+
+.footerVisible {
+  bottom: 0;
+  /* Show the footer */
+}
+
+.withdrawButton {
+  /* Add the properties you want here */
+  /* For instance, if you want it to look like your "Stake All" button, 
+  you might use the same properties as the styles for that button */
+
+  border: none;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.withdrawButton:hover {
+  background-color: #68676700;
+  border-radius: 16px;
+  border: 2px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+}
+
+.lockIcon svg,
+.unlockIcon svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.lockText {
+  font-size: 20px;
+  color: #2600fc;
+}

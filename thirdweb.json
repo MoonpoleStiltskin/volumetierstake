@@ -1,0 +1,23 @@
+{
+  "chainIds": [
+    5
+  ],
+  "contracts": [
+    {
+      "address": "0x2faF84385BE6fB3501400C8fDd0378668588b298",
+      "chainId": 5
+    },
+    {
+      "address": "0xaFAc854c2b83f40B21c6dB1Dc02D419b6286cb13",
+      "chainId": 5
+    },
+    {
+      "address": "0xC97Ebf1a9cC3D347A4b539D11AE7325b9BF4a9C8",
+      "chainId": 5
+    },
+    {
+      "address": "0x97405970cBd9e9154B9eE18Ac11BB2B3edaE642e",
+      "chainId": 5
+    }
+  ]
+}
